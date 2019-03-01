@@ -1,0 +1,3 @@
+﻿  源.cpp
+b:\30702\documents\leetcode\stack\844. backspace string compare\844. backspace string compare\源.cpp(80): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  844. Backspace String Compare.vcxproj -> B:\30702\Documents\Leetcode\Stack\844. Backspace String Compare\x64\Debug\844. Backspace String Compare.exe
