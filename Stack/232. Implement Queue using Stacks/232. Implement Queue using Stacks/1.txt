@@ -1,0 +1,43 @@
+#include <iostream>
+#include<algorithm>
+#include<stack>
+#include<queue>
+#include<vector>
+#include<string>
+#include<cstring>
+#include<cmath>
+#include<map>
+using namespace std;
+class MyQueue1 {
+	stack<int> input, output;
+public:
+	/** Initialize your data structure here. */
+	MyQueue1() {
+
+	}
+
+	/** Push element x to the back of queue. */
+	void push(int x) {
+		input.push(x);
+	}
+
+	/** Removes the element from in front of queue and returns that element. */
+	int pop() {
+		int num = peek();
+		output.pop();
+		return num;
+	}
+
+	/** Get the front element. */
+	int peek() {
+		if (output.empty())
+			while (input.size())
+				output.push(input.top()), input.pop();
+		return output.top();
+	}
+
+	/** Returns whether the queue is empty. */
+	bool empty() {
+		return input.empty() && output.empty();
+	}
+};
